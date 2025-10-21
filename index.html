@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple HTML Page</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 20px;
+				line-height: 1.6;
+				background-color: #f4f4f4;
+			}
+			.container {
+				background-color: white;
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+			h1 {
+				color: #333;
+				text-align: center;
+				border-bottom: 2px solid #007acc;
+				padding-bottom: 10px;
+			}
+			h2 {
+				color: #555;
+			}
+			.highlight {
+				background-color: #e7f3ff;
+				padding: 15px;
+				border-left: 4px solid #007acc;
+				margin: 20px 0;
+			}
+			button {
+				background-color: #007acc;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 16px;
+			}
+			button:hover {
+				background-color: #005a99;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Welcome to My Simple HTML Page</h1>
+
+			<h2>About This Page</h2>
+			<p>
+				This is a simple HTML page created with basic structure and styling. It
+				demonstrates:
+			</p>
+			<ul>
+				<li>Proper HTML5 document structure</li>
+				<li>CSS styling for a clean appearance</li>
+				<li>Responsive design principles</li>
+				<li>Interactive elements</li>
+			</ul>
+
+			<div class="highlight">
+				<h3>Featured Content</h3>
+				<p>
+					This highlighted section shows how CSS can be used to create visually
+					appealing content blocks.
+				</p>
+			</div>
+
+			<h2>Interactive Element</h2>
+			<p>Click the button below to see a simple JavaScript interaction:</p>
+			<button onclick="showMessage()">Click Me!</button>
+			<p
+				id="message"
+				style="margin-top: 15px; font-weight: bold; color: #007acc"
+			></p>
+
+			<h2>Contact Information</h2>
+			<p>
+				This is a sample contact section. You can customize this with your own
+				information.
+			</p>
+			<ul>
+				<li>Email: example@email.com</li>
+				<li>Phone: (555) 123-4567</li>
+				<li>Location: Your City, State</li>
+			</ul>
+		</div>
+
+		<script>
+			function showMessage() {
+				document.getElementById('message').innerHTML =
+					'Hello! Thanks for clicking the button! 🎉'
+			}
+		</script>
+	</body>
+</html>
