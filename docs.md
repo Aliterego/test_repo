@@ -1,2 +1,5 @@
 # Documentation
-This is main documentation
+
+This is the main documentation file.
+
+Added important notes about installation.
